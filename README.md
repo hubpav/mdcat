@@ -1,6 +1,6 @@
 # mdcat - Markdown-friendly variant of cat
 
-Ever struggling quickly documenting your server configuration files in a Git repo or share it with your colleagues for the future reference? Welcome to **mdcat**.
+Ever struggling quickly documenting your server configuration files in a Git repo or sharing them with your colleagues for the future reference? Welcome to **mdcat**.
 
 It is a simple Python 3 command line utility, ingesting file path(s) arguments, and printing their content in Markdown-friendly format.
 
@@ -14,14 +14,21 @@ Moreover, it prints the file's absolute path, mode (permissions), and owner (use
 
 Install/upgrade the tool from PyPI using:
 
-    pip3 install --upgrade mdcat
+    $ pip3 install --upgrade mdcat
 
 ## Usage
 
+    $ mdcat --help
+    Usage: mdcat [OPTIONS] [FILES]...
+
+    Options:
+      --version  Show the version and exit.
+      --help     Show this message and exit.
+
 Example:
 
-    echo foo >> bar
-    mdcat bar
+    $ echo foo >> bar
+    $ mdcat bar
 
 Output:
 
